@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wheather forecast</title>
+<style>
+    .intro {
+        background-color: white;
+        width: 300px;
+        border-radius: 20px;
+        text-align: center;
+        height: 100px;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+    }
+
+    body {
+        background-color: {{ screen_color }};
+    }
+    .data {
+        background-color: white;
+        width: 300px;
+        border-radius: 20px;
+        text-align: center;
+        height: 180px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+    }
+    .header {
+        
+        text-align: center;
+    }
+
+    .subtext {
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+
+
+<div class="intro">
+    <h3 class="header">Welcome to wheather forecast app</h3>
+    <h5 class="subtext">Beta version</h5>
+</div>
+<div class="data">
+    <p>City: {{city}}</p>
+    <p>Country: {{country}}</p>
+    <p>Temperature: {{temp}} <span>&#8451;</span> </p>
+    <p>Wind speed: {{wind}} km/h </p>
+
+</div>
+
+
+</body>
+</html>
+
